@@ -1,0 +1,28 @@
+// header
+header {
+    height: 100px;
+
+    img {
+        width: 162.163px;
+        color: #000000;
+    }
+
+    .nav-item .nav-link {
+        color: #000000 !important;
+        font-size: 20px;
+
+        span {
+            color: #B8EDF8;
+        }
+    }
+}
+
+// bg-section
+
+.bg-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
