@@ -255,12 +255,18 @@
                 <hr>
             </div>
 
-            <form action="/">
+            <form action="?" method="post" id="contact-form">
                 <div class="row justify-content-center">
                     <div class="form-box  col-6">
-                        <input type="text" id="fname" name="firstname" placeholder="სახელი">
-                        <input type="text" id="fname" name="firstname" placeholder="სახელი">
-                        <textarea id="subject" name="subject" placeholder="შეტყობინება" style="height:105px"></textarea>
+
+                        <input data-validation="required"
+                            data-validation-error-msg="სახელი უნდა იყოს 3-დან 12 სიმბოლომდე" type="text" id="firstname"
+                            name="firstname" placeholder="სახელი">
+
+                        <input data-validation="email" data-validation-error-msg="ელ-ფოსტა არასწორია" type="text"
+                            id="email" name="email" placeholder="ელ-ფოსტა">
+                        <textarea data-validation="required" data-validation-error-msg="შეავსეთ საკონტაქტო ფორმა"
+                            id="text" name="text" placeholder="შეტყობინება" style="height:105px"></textarea>
                         <div class="d-flex justify-content-between button-box">
                             <p>კითხვებისთვის გამოიყენეთ ფორმა</p>
                             <input class=" button text-center" type="submit" value="გაგზავნა">
@@ -302,5 +308,30 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+<script>
+
+    $.validate({
+
+    });
+
+    $('document').ready(function () {
+
+        $("#contact-form").on('submit', function (e) {
+
+            e.preventDefault();
+
+            $('#firstname').val('')
+            $('#email').val('')
+            $('#text').val('')
+
+            alert('შეტყობინება წარმატებით გაიგზავნა');
+        });
+
+    })
+
+</script>
 
 </html>
