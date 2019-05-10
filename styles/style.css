@@ -55,7 +55,7 @@ header {
     color: #000000; }
   header .nav-item .nav-link {
     color: #000000 !important;
-    font-size: 20pt; }
+    font-size: 18pt; }
     header .nav-item .nav-link span {
       color: #B8EDF8; }
 
@@ -80,7 +80,7 @@ header {
     border-top: 1px solid #000000;
     width: 93px;
     margin: 0 auto;
-    margin-top: 18px; }
+    margin-top: 24pt; }
   .icon-box .row-section {
     padding-top: 56px; }
     .icon-box .row-section .border-box {
@@ -96,10 +96,10 @@ header {
           margin-top: 22px;
           margin-bottom: 41px; }
         .icon-box .row-section .border-box .inner-border-box h4 {
-          font-size: 18px;
+          font-size: 18pt;
           margin-bottom: 18px; }
         .icon-box .row-section .border-box .inner-border-box p {
-          font-size: 16px; }
+          font-size: 16pt; }
       .icon-box .row-section .border-box img {
         background-position: center;
         background-repeat: no-repeat;
@@ -135,7 +135,7 @@ header {
           color: #FFFFFF;
           margin-bottom: 12px; }
         .bg-images .row-images .main_image .overlay h4 {
-          font-size: 18px;
+          font-size: 18pt !important;
           color: #FFFFFF !important; }
     .bg-images .row-images .main_image:hover .overlay {
       opacity: 0.9; }
@@ -161,7 +161,7 @@ header {
       margin-top: 15px;
       margin-bottom: 56px; }
     .mbr-section .media-container-row .header-text p {
-      font-size: 12px; }
+      font-size: 16pt; }
 
 .form-section {
   background-color: #B8EDF8;
@@ -190,7 +190,7 @@ header {
       border: 1px solid #7EC4CE;
       width: 80px;
       height: 30px;
-      font-size: 14px; }
+      font-size: 14pt; }
   .form-section .button-box {
     padding-top: 14px; }
   .form-section .header-text {
