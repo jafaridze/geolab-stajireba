@@ -22,7 +22,7 @@ header {
 
     .nav-item .nav-link {
         color: #000000 !important;
-        font-size: 18pt;
+        font-size: 14pt;
 
         span {
             color: #B8EDF8;
@@ -33,7 +33,7 @@ header {
 // bg-section
 
 .bg-section {
-    background-image:url(../images/header.png);
+    background-image: url(../images/header.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,8 +55,8 @@ header {
 
 // icon-box
 .icon-box {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     .header-text {
         hr {
@@ -175,7 +175,7 @@ header {
         padding-top: 60px;
         padding-bottom: 70px;
 
-        img{
+        img {
             position: relative;
             width: 100%;
             z-index: 999;
@@ -188,6 +188,7 @@ header {
             left: 30px;
             top: 30px;
         }
+
         .header-text {
 
             .hr {
@@ -198,7 +199,7 @@ header {
             }
 
             p {
-                font-size: 16pt;
+                font-size: 12pt;
 
             }
         }
@@ -222,18 +223,20 @@ header {
         input {
             padding: 12px;
             margin-bottom: 18px;
-            border: 2px solid #333333;
+            border: 1px solid #333333;
             width: 100%;
             height: 100%;
+            font-size: 12pt;
         }
 
         textarea {
             padding: 12px;
-            border: 2px solid #333333;
+            border: 1px solid #333333;
             box-sizing: border-box;
             resize: vertical;
             width: 100%;
             height: 100%;
+            font-size: 12pt;
 
         }
 
@@ -244,8 +247,11 @@ header {
             border: 1px solid #7EC4CE;
             width: 80px;
             height: 30px;
-            font-size: 14pt;
+            font-size: 12pt;
 
+        }
+        p{
+            font-size: 12pt;
         }
 
     }
@@ -281,6 +287,7 @@ header {
         .footer-p {
             color: #FFFFFF;
             margin: 0px;
+            font-size: 12pt;
         }
 
         img {
