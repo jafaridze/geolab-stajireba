@@ -78,8 +78,8 @@ header {
     padding-top: 56px;
     padding-bottom: 56px; }
     .icon-box .row-section .border-box {
-      width: 263px;
-      height: 300px; }
+      width: 100%;
+      height: 100%; }
       .icon-box .row-section .border-box .inner-border-box {
         border: 1px solid #B2B2B2;
         padding: 30px; }
@@ -216,10 +216,10 @@ header {
 .footer-section {
   background-color: #313332; }
   .footer-section .footer-box {
-    padding: 30px; }
+    padding-top: 30px;
+    padding-bottom: 30px; }
     .footer-section .footer-box .footer-p {
       color: #FFFFFF;
-      line-height: 15px;
       margin: 0px; }
     .footer-section .footer-box img {
       color: #FFFFFF;
