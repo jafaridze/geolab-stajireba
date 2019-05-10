@@ -106,25 +106,11 @@ header {
   padding-bottom: 30px; }
   .bg-images .row-images {
     padding-bottom: 30px; }
-    .bg-images .row-images .img-1 {
-      background-image: url("../images/img1.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .bg-images .row-images .img-2 {
-      background-image: url("../images/img2.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-    .bg-images .row-images .img-3 {
-      background-image: url("../images/img3.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
+    .bg-images .row-images .box {
+      margin-top: 30px; }
     .bg-images .row-images .main_image {
       position: relative;
       width: 100%;
-      height: 198px;
       border: 2px solid #B8EDF8; }
       .bg-images .row-images .main_image .overlay {
         position: absolute;
