@@ -139,17 +139,13 @@ header {
   .mbr-section .media-container-row {
     padding-top: 60px;
     padding-bottom: 70px; }
-    .mbr-section .media-container-row .img {
-      background-image: url("../images/photo.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 329px;
-      width: 371px;
-      z-index: 9999999999999999999; }
-    .mbr-section .media-container-row .blu-background {
-      height: 329px;
-      width: 371px;
+    .mbr-section .media-container-row img {
+      position: relative;
+      width: 100%;
+      z-index: 999; }
+    .mbr-section .media-container-row .blu-shadow {
+      height: 100%;
+      width: 100%;
       background-color: #B8EDF8;
       left: 30px;
       top: 30px; }
