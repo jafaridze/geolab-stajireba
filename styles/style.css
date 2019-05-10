@@ -48,6 +48,9 @@ table {
 .glaho {
   font-family: "BPG Glaho WEB Caps", sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 header {
   height: 100px; }
   header img {
