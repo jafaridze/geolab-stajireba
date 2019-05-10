@@ -1,5 +1,5 @@
 // fonts
-.Nino-Mkhedruli {
+.nino-Mkhedruli {
     font-family: "BPG Nino Mkhedruli Book", sans-serif;
 }
 
@@ -29,6 +29,7 @@ header {
 // bg-section
 
 .bg-section {
+    background-image:url(../images/header.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,28 +121,6 @@ header {
             margin-top: 30px;
         }
 
-        // .img-1 {
-        //     background-image: url("../images/img1.png");
-        //     background-position: center;
-        //     background-repeat: no-repeat;
-        //     background-size: cover;
-
-        // }
-
-        // .img-2 {
-        //     background-image: url("../images/img2.png");
-        //     background-position: center;
-        //     background-repeat: no-repeat;
-        //     background-size: cover;
-        // }
-
-        // .img-3 {
-        //     background-image: url("../images/img3.png");
-        //     background-position: center;
-        //     background-repeat: no-repeat;
-        //     background-size: cover;
-        // }
-
         .main_image {
             position: relative;
             width: 100%;
@@ -192,31 +171,19 @@ header {
         padding-top: 60px;
         padding-bottom: 70px;
 
-        .image {}
-
-        .text {}
-
-
-        .img {
-            background-image: url("../images/photo.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 329px;
-            width: 371px;
-            z-index: 9999999999999999999;
-
+        img{
+            position: relative;
+            width: 100%;
+            z-index: 999;
         }
 
-        .blu-background {
-            height: 329px;
-            width: 371px;
+        .blu-shadow {
+            height: 100%;
+            width: 100%;
             background-color: #B8EDF8;
             left: 30px;
             top: 30px;
-
         }
-
         .header-text {
 
             .hr {
