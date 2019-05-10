@@ -1,5 +1,13 @@
+// fonts
+.Nino-Mkhedruli {
+    font-family: "BPG Nino Mkhedruli Book", sans-serif;
+}
+
+.glaho {
+    font-family: "BPG Glaho WEB Caps", sans-serif;
+}
+
 // header
-// bibi comment
 header {
     height: 100px;
 
@@ -57,7 +65,6 @@ header {
 
     .row-section {
         padding-top: 56px;
-        padding-bottom: 56px;
 
         .border-box {
             width: 100%;
@@ -83,6 +90,7 @@ header {
 
                 p {
                     font-size: 16px;
+
                 }
             }
 
@@ -100,7 +108,7 @@ header {
 
 // images-section
 .bg-images {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 30px;
 
 
@@ -108,7 +116,7 @@ header {
     .row-images {
         padding-bottom: 30px;
 
-        .box{
+        .box {
             margin-top: 30px;
         }
 
@@ -184,12 +192,9 @@ header {
         padding-top: 60px;
         padding-bottom: 70px;
 
-        .image{
-        }
+        .image {}
 
-        .text{
-
-        }
+        .text {}
 
 
         .img {
@@ -213,7 +218,7 @@ header {
         }
 
         .header-text {
-            
+
             .hr {
                 border-top: 2px solid #000000;
                 width: 93px;
@@ -269,6 +274,7 @@ header {
             width: 80px;
             height: 30px;
             font-size: 14px;
+
 
         }
 
