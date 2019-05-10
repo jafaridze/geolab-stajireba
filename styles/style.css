@@ -51,11 +51,11 @@ table {
 header {
   height: 100px; }
   header img {
-    width: 162.163px;
+    width: 165px;
     color: #000000; }
   header .nav-item .nav-link {
     color: #000000 !important;
-    font-size: 20px; }
+    font-size: 20pt; }
     header .nav-item .nav-link span {
       color: #B8EDF8; }
 
@@ -68,10 +68,10 @@ header {
   width: 100%; }
   .bg-section .text h1 {
     color: #FFFFFF;
-    font-size: 53px; }
+    font-size: 40pt; }
   .bg-section h4 {
     color: #FFFFFF;
-    font-size: 39px; }
+    font-size: 30pt; }
 
 .icon-box {
   margin-top: 60px;
