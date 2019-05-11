@@ -11,29 +11,118 @@ html {
     scroll-behavior: smooth;
 }
 
+// burger-section
+.expand-navbar {
+    background-color: #FFFFFF;
+    width: 100%;
+    top: 100px;
+
+    .burger-box {
+        background-color: #B8EDF8;
+
+        @media (min-width: 992px) {
+            display: none;
+
+        }
+
+        .burger-item .nav-link {
+            color: #000 !important;
+            font-size: 20px !important;
+        }
+
+
+
+
+    }
+}
+
+
+
+
+//scroll to top
+
+#back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 999;
+
+    a {
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+
+        &:hover span {
+            background-color: #777;
+        }
+    }
+
+    span {
+        width: 56px;
+        height: 59px;
+        display: block;
+        margin-bottom: 0;
+        background: #ddd url(../images/up-arrow.png) no-repeat center center;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+        background-size: 25px;
+    }
+}
+
+
 // header
 header {
     height: 100px;
+
+    .logo {
+        margin-left: 30px;
+    }
 
     img {
         width: 165px;
         color: #000000;
     }
 
-    .nav-item .nav-link {
-        color: #000000 !important;
-        font-size: 14pt;
+    .navbar {
+        padding-right: 0px !important;
 
-        span {
-            color: #B8EDF8;
+
+
+        .nav-item {
+            .nav-link {
+                color: #000000;
+                font-size: 20px;
+                padding: 8px 30px 8px 0px !important;
+
+                &.active {
+                    color: #B8EDF8;
+                }
+
+                &:hover {
+                    color: #B8EDF8;
+                }
+            }
         }
+
     }
+
+
 }
 
 // bg-section
+.parallax-window {
+    min-height: 400px;
+    background-image: url("../images/header.png");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .bg-section {
-    background-image: url(../images/header.png);
+    // background-image: url(../images/header.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,12 +131,28 @@ header {
 
     .text h1 {
         color: #FFFFFF;
-        font-size: 40pt;
+        font-size: 40px;
+
+        @media (max-width: 991px) {
+            font-size: 34px;
+        }
+
+        @media (max-width: 747px) {
+            font-size: 24px;
+        }
     }
 
     h4 {
         color: #FFFFFF;
-        font-size: 30pt;
+        font-size: 30px;
+
+        @media (max-width: 991px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 747px) {
+            font-size: 20px;
+        }
     }
 }
 
@@ -60,10 +165,10 @@ header {
 
     .header-text {
         hr {
-            border-top: 1px solid #000000;
+            border-top: 2px solid #000000;
             width: 93px;
             margin: 0 auto;
-            margin-top: 24pt;
+            margin-top: 15px;
         }
     }
 
@@ -83,18 +188,18 @@ header {
                     border-top: 2px solid #B8EDF8;
                     width: 25px;
                     margin: 0 auto;
-                    margin-top: 22px;
+                    margin-top: 15px;
                     margin-bottom: 41px;
 
                 }
 
                 h4 {
-                    font-size: 18pt;
+                    font-size: 18px;
                     margin-bottom: 18px;
                 }
 
                 p {
-                    font-size: 16pt;
+                    font-size: 16px;
 
                 }
             }
@@ -128,7 +233,6 @@ header {
         .main_image {
             position: relative;
             width: 100%;
-            // height: 198px;
             border: 2px solid #B8EDF8;
 
             .overlay {
@@ -143,6 +247,7 @@ header {
                 transition: .5s ease;
                 background-color: #B8EDF8;
                 z-index: 99999;
+                cursor: pointer;
 
                 .text-hover img {
                     height: 29px;
@@ -152,11 +257,10 @@ header {
                 }
 
                 h4 {
-                    font-size: 18pt !important;
+                    font-size: 18px !important;
                     color: #FFFFFF !important;
                 }
             }
-
 
         }
 
@@ -179,6 +283,10 @@ header {
             position: relative;
             width: 100%;
             z-index: 999;
+
+            @media (max-width: 767px) {
+                width: 90%;
+            }
         }
 
         .blu-shadow {
@@ -187,6 +295,10 @@ header {
             background-color: #B8EDF8;
             left: 30px;
             top: 30px;
+
+            @media (max-width: 767px) {
+                width: 90%;
+            }
         }
 
         .header-text {
@@ -199,7 +311,7 @@ header {
             }
 
             p {
-                font-size: 12pt;
+                font-size: 12px;
 
             }
         }
@@ -226,7 +338,7 @@ header {
             border: 1px solid #333333;
             width: 100%;
             height: 100%;
-            font-size: 12pt;
+            font-size: 12px;
         }
 
         textarea {
@@ -236,7 +348,7 @@ header {
             resize: vertical;
             width: 100%;
             height: 100%;
-            font-size: 12pt;
+            font-size: 12px;
 
         }
 
@@ -247,11 +359,12 @@ header {
             border: 1px solid #7EC4CE;
             width: 80px;
             height: 30px;
-            font-size: 12pt;
+            font-size: 12px;
 
         }
-        p{
-            font-size: 12pt;
+
+        p {
+            font-size: 12px;
         }
 
     }
@@ -287,13 +400,31 @@ header {
         .footer-p {
             color: #FFFFFF;
             margin: 0px;
-            font-size: 12pt;
+            font-size: 12px;
         }
 
         img {
             color: #FFFFFF;
             width: 165px;
 
+            @media (max-width: 767px) {
+                width: auto;
+            }
         }
+    }
+}
+
+// media
+@media only screen and (max-width: 991px) {
+    .menu-button {
+        margin-right: 16px;
+    }
+
+    .text-box {
+        margin-top: 82px !important;
+    }
+
+    .media-container {
+        padding-bottom: 0px;
     }
 }
